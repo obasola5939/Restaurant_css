@@ -50,6 +50,7 @@ body{
     color: white;
     background-size: cover;
     background-position: center;
+    display: flex;
     min-height: 100vh;
     flex-direction: column;
 
@@ -83,7 +84,7 @@ body{
 }
 
 .navbar .logo{
-    height: 5rem;
+    height: 5rem; 
 }
 
 .nabar .right .phone{
