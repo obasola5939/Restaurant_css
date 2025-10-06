@@ -147,6 +147,7 @@ main{
     align-items: center;
     padding: 3rem 8rem;
     gap: 4rem;
+    /* background-color: blanchedalmond; */
 
 }
 
@@ -166,4 +167,62 @@ main{
     text-align: right;
     margin-bottom: 0.5rem;
     margin-top: 0;
+}
+
+.menu-container .menu-item .item-info{
+    border-top: 4px dotted black;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+}
+
+.menu-container .menu-item .item-info h3{
+    font-size: 3.6rem;
+    font-family: "Rufina";
+    margin-top: 0;
+    margin-bottom: 1rem;
+    line-height: 1.1;
+}
+
+.menu-container .menu-item .item-info p{
+    font-size: 1.2rem;
+    font-family: "Lato";
+    margin: 0;
+    line-height: 1.1;
+}
+
+/* Make a Reservation Styles */
+
+.reservation-container{
+    background-color: #ebf0e4;
+    padding: 8rem 8rem;
+    text-align: center;
+}
+
+.reservation-container .scheduling-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 4rem;
+    gap: 2rem;
+}
+
+.scheduling-container input, .scheduling-container select{
+    flex: 1;
+    height: 5rem;
+    border: 2px solid black;
+    padding: 0 2rem;
+    background-color: #ebf0e4;
+    font-size: 1.5rem;
+    font-family: "Lato";
+}
+
+.btn.primary{
+    background-color: #233000;
+    border: 2px solid black;
+    margin-top: 4rem;
+    padding: 0 4rem;
+}
+
+.btn.primary:hover{
+    background-color: #2d4000;
 }
