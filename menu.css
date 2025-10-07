@@ -11,6 +11,12 @@
     font-weight: bold;
 }
 
+/* CSS variable */
+:root {
+    --footer--bg-color: #233000;
+    --footer-text-color: white;
+}
+
 *{
     box-sizing: border-box;
 }
@@ -226,3 +232,115 @@ main{
 .btn.primary:hover{
     background-color: #2d4000;
 }
+
+/* * Footer styles */
+
+footer{
+    background-color: var(--footer--bg-color);
+    color: var(--footer-text-color);
+}
+
+.contact-container{
+    padding: 5rem 8rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 4rem;
+    align-items: center;
+}
+
+.contact-container .left{
+    /* ! Effect: The browser looks at the item's content to determine its primary dimension before any growing or shrinking occurs */
+    /* The flex item's starting size is determined by its content's size */
+    flex: 0 0 auto; /* if a width or height is not explicitly set on the item itself */
+}
+
+.contact-container .middle{
+    /* ! Effect: The browser looks at the item's content to determine its primary dimension before any growing or shrinking occurs */
+    /* The flex item's starting size is determined by its content's size */
+    flex: 0 0 auto; /* if a width or height is not explicitly set on the item itself */
+}
+
+.contact-container .rigt{
+    flex: 1;
+    max-width: 400px;
+}
+
+.left .footer-title{
+    font-family: "Rufina";
+    font-size: 3.5rem;
+    margin: 0;
+}
+
+.contact-container .footer-subtitle{
+    font-family: "Rufina";
+    font-size: 1.8rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container .middle p{
+    font-family: "Lato";
+    font-size: 0.9rem;
+    line-height: 1.2rem;
+    margin-bottom: 1.5rem;
+}
+
+.contact-container .newsletter-container{
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.contact-container .newsletter-container input{
+    flex: 1;
+    height: 4rem;
+    border: 2px solid white;
+    background-color: #233000;
+    padding-left: 2rem;
+    padding-right: 1.2rem;
+    color: white;
+}
+
+.contact-container .newsletter-container input::placeholder{
+    color: #ccc;
+}
+
+.btn.secondary{
+    border: none;
+    background-color: #5e6600;
+}
+
+.btn.secondary:hover{
+    background-color: #7b8046;
+}
+.newsletter-info{
+    font-family: "Lato";
+    font-size: 0.8rem;
+    line-height: 1.3rem;
+    margin: 0;
+}
+
+.copyright-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 8rem 5rem 8rem;
+    font-family: "Lato";
+    border-top: 2px dashed white;
+}
+
+.socials-container{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+}
+
+.socials-container img{
+    width: 2rem;
+    background-color: rgb(47, 126, 67);
+    height: 2rem;
+}
+
+/* RESPONSIVE MEDIA QUERIES */
